@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IMADIKSI UIN RF — Ikatan Mahasiswa Bidikmisi KIP-Kuliah UIN Raden Fatah Palembang</title>
+    <!-- Tailwind CSS via CDN (play) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind config: extend palette
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                  50: '#fffaf0',
+                  100: '#fff2d9',
+                  200: '#fde2a8',
+                  300: '#facc6e',
+                  400: '#f6b834',
+                  500: '#c68600',
+                  600: '#b06f00',
+                  700: '#8f5a00',
+                  800: '#6a3f00',
+                  900: '#3e2400'
+                },
+              ambercampus: {
+                50: '#fff9f2',
+                100: '#fff2e0',
+                200: '#ffdfb3',
+                300: '#facb87',
+                400: '#f6b24b',
+                500: '#f29a14',
+                600: '#da7f0f',
+                700: '#b5580a',
+                800: '#8c4107',
+                900: '#672b05'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body class="font-sans text-gray-800 bg-white leading-relaxed">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur transition-shadow shadow-sm" id="header">
+      <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16" aria-label="Main navigation">
+        <div class="flex items-center gap-3">
+          <a href="#beranda" class="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Beranda IMADIKSI">
+            <img src="assets/foto/logo-imadiksi.jpg" alt="Logo IMADIKSI" class="h-10 w-10" />
+            <span class="font-semibold text-brand-700">IMADIKSI UIN RF</span>
+          </a>
+        </div>
+
+        <button id="nav-toggle" class="sm:hidden p-2 rounded-md focus:outline-none focus:ring-2" aria-expanded="false" aria-controls="primary-menu" aria-label="Buka menu">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+        <ul id="primary-menu" class="hidden sm:flex sm:items-center sm:gap-6" role="menubar">
+          <li><a class="menu-link px-2 py-1 hover:text-brand-700 focus:outline-none focus:ring-2" href="#beranda">Beranda</a></li>
+          <li><a class="menu-link px-2 py-1 hover:text-brand-700 focus:outline-none focus:ring-2" href="#tentang">Tentang KIP</a></li>
+          <li><a class="menu-link px-2 py-1 hover:text-brand-700 focus:outline-none focus:ring-2" href="#kader">Kader Berprestasi</a></li>
+          <li><a class="menu-link px-2 py-1 hover:text-brand-700 focus:outline-none focus:ring-2" href="#kegiatan">Kegiatan</a></li>
+          <li><a class="menu-link px-2 py-1 hover:text-brand-700 focus:outline-none focus:ring-2" href="#aduan">Aduan/Aspirasi</a></li>
+          <li><a class="menu-link px-2 py-1 hover:text-brand-700 focus:outline-none focus:ring-2" href="#faq">FAQ</a></li>
+          <li><a class="menu-link px-2 py-1 hover:text-brand-700 focus:outline-none focus:ring-2" href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+      <div id="mobile-menu" class="sm:hidden px-4 pb-4 hidden" aria-hidden="true">
+        <ul class="flex flex-col gap-2">
+          <li><a class="block py-2" href="#beranda">Beranda</a></li>
+          <li><a class="block py-2" href="#tentang">Tentang KIP</a></li>
+          <li><a class="block py-2" href="#kegiatan">Kegiatan</a></li>
+          <li><a class="block py-2" href="#aduan">Aduan/Aspirasi</a></li>
+          <li><a class="block py-2" href="#faq">FAQ</a></li>
+          <li><a class="block py-2" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" id="beranda">
+      <!-- Hero -->
+      <section class="pt-8 pb-12 sm:pt-12 sm:pb-20 text-center">
+        <!-- Hero with background slideshow -->
+  <div class="hero-slideshow mx-auto max-w-5xl h-120 sm:h-100 lg:h-100" aria-hidden="false">
+          <div class="slides" id="slides">
+            <!-- slides injected by JS for accessibility/control -->
+            <div class="slide active" data-src="/assets/foto/foto-imadiksi-1.jpg" role="img" aria-label="Mahasiswa berdiskusi"></div>
+            <div class="slide" data-src="/assets/foto/foto-imadiksi-2.jpg" role="img" aria-label="Suasana kampus"></div>
+            <div class="slide" data-src="/assets/foto/foto-imadiksi-3.jpg" role="img" aria-label="Pelatihan dan workshop"></div>
+          </div>
+          <div class="overlay" aria-hidden="true"></div>
+          <div class="hero-content p-6 sm:p-12 lg:p-16 text-white">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white drop-shadow">Ikatan Mahasiswa Bidikmisi KIP-Kuliah UIN Raden Fatah Palembang</h1>
+            <p class="mt-4 text-lg sm:text-2xl text-white/90">Mendampingi penerima KIP Kuliah, berbagi informasi, kegiatan, dan layanan aspirasi bagi mahasiswa.</p>
+            <div class="mt-6 flex justify-center gap-3">
+              <a href="#aduan" class="inline-block bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-md shadow focus:outline-none focus:ring-2">Sampaikan Aduan / Aspirasi</a>
+              <a href="#kegiatan" class="inline-block border border-white/40 text-white px-6 py-3 rounded-md hover:bg-white/10 focus:outline-none focus:ring-2">Lihat Kegiatan</a>
+            </div>
+          </div>
+        </div>
+        <!-- end hero slideshow -->
+      </section>
+      
+      <!-- Tentang KIP -->
+      <section id="tentang" class="py-8 sm:py-12" tabindex="-1">
+        <h2 class="text-2xl font-bold text-brand-700">Tentang KIP Kuliah</h2>
+        <p class="mt-4 text-gray-700 text-justify">KIP Kuliah (Kartu Indonesia Pintar Kuliah) adalah program bantuan pendidikan dari pemerintah Indonesia yang ditujukan untuk lulusan SMA/SMK/sederajat yang memiliki keterbatasan ekonomi tetapi ingin melanjutkan pendidikan ke perguruan tinggi. Program ini hadir sebagai bentuk kepedulian negara agar semua anak bangsa memiliki kesempatan yang sama dalam meraih pendidikan tinggi, tanpa terhalang oleh biaya.
+
+        Penerima KIP Kuliah akan mendapatkan pembebasan biaya kuliah penuh sesuai ketentuan perguruan tinggi negeri maupun swasta yang dipilih, serta tunjangan biaya hidup bulanan. Bantuan ini diharapkan dapat meringankan beban mahasiswa dan keluarganya sehingga mereka bisa lebih fokus belajar dan mengembangkan diri selama kuliah.
+
+        KIP Kuliah tidak hanya membantu dalam hal finansial, tetapi juga membuka jalan bagi mahasiswa berprestasi dari keluarga kurang mampu untuk meraih mimpi, meningkatkan kualitas hidup, dan pada akhirnya berkontribusi untuk pembangunan bangsa.</p>
+        <div class="mt-4 grid gap-6 sm:grid-cols-3">
+          <div class="p-4 border rounded-lg shadow-sm bg-white">
+            <h3 class="font-semibold">Manfaat</h3>
+            <p class="mt-2 text-sm text-gray-600">Pembiayaan penuh kuliah, biaya hidup, dan akses pendampingan untuk penerima KIP Kuliah.</p>
+          </div>
+          <div class="p-4 border rounded-lg shadow-sm bg-white">
+            <h3 class="font-semibold">Syarat Umum</h3>
+            <ul class="mt-2 text-sm text-gray-600 list-disc ml-5">
+              <li>Mengajukan dokumen bukti ekonomi</li>
+              <li>Memenuhi persyaratan akademik universitas</li>
+              <li>Memenuhi persyaratan akademik universitas</li>
+              <li>Memenuhi persyaratan akademik universitas</li>
+              <li>Memenuhi persyaratan akademik universitas</li>
+            </ul>
+          </div>
+          <div class="p-4 border rounded-lg shadow-sm bg-white">
+            <h3 class="font-semibold">Kewajiban</h3>
+            <ul class="mt-2 text-sm text-gray-600 list-disc ml-5">
+              <li>Melaporkan perkembangan akademik</li>
+              <li>Mengikuti kegiatan pembinaan IMADIKSI</li>
+              <li>Menjaga perilaku dan etika akademik</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- tentang IMADIKSI -->
+       <section id="about-imadiksi" class="py-8 sm:py-12" tabindex="-1">
+          <h2 class="text-2xl font-bold text-brand-700">Tentang IMADIKSI</h2>
+          <p class="mt-4 text-gray-700 text-justify">Ikatan Mahasiswa Bidikmisi (IMADIKSI) UIN Raden Fatah Palembang adalah wadah organisasi mahasiswa penerima KIP Kuliah yang bertujuan mendampingi, membina, dan memperjuangkan hak serta kesejahteraan anggotanya. IMADIKSI menyelenggarakan kegiatan pembinaan akademik, pengembangan soft-skill, advokasi, dan aksi sosial yang mendukung keberlangsungan studi penerima KIP serta meningkatkan keterlibatan mahasiswa dalam kegiatan kampus dan masyarakat.</p>
+        </section>
+            <!-- Kader Berprestasi -->
+      <section id="kader" class="py-8 sm:py-12" tabindex="-1">
+        <h2 class="text-2xl font-bold text-brand-700">Kader Berprestasi</h2>
+        <p class="mt-2 text-sm text-gray-600">Menampilkan kader-kader unggulan dan prestasinya.</p>
+        <div class="mt-4 relative">
+          <div id="kader-carousel" class="kader-carousel overflow-x-auto no-scrollbar scroll-snap-x snap-mandatory flex gap-4 py-2 px-6 text-justify" tabindex="0" aria-label="Carousel kader"></div>
+        </div>
+        <div class="mt-3 text-right ">
+          <a href="kader.html" class="text-sm text-brand-700 hover:underline">Lihat semua kader berprestasi →</a>
+        </div>
+      </section>
+
+      <!-- Kegiatan -->
+      <section id="kegiatan" class="py-8 sm:py-12" tabindex="-1">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <h2 class="text-2xl font-bold text-brand-700">Kegiatan</h2>
+          <div class="flex gap-2 items-center">
+            <input id="search" type="search" placeholder="Cari kegiatan..." aria-label="Cari kegiatan" class="px-3 py-2 border rounded-md focus:ring-2" />
+            <select id="filter-category" class="px-3 py-2 border rounded-md focus:ring-2" aria-label="Filter kategori">
+              <option value="">Semua Kategori</option>
+            </select>
+            <select id="filter-month" class="px-3 py-2 border rounded-md focus:ring-2" aria-label="Filter bulan">
+              <option value="">Semua Bulan</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="kegiatan-grid" class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+        <div class="mt-3 text-right">
+          <a href="kegiatan.html" class="text-sm text-brand-700 hover:underline">Lihat semua kegiatan →</a>
+        </div>
+      </section>
+
+      <!-- Aduan/Aspirasi -->
+      <section id="aduan" class="py-8 sm:py-12" tabindex="-1">
+        <h2 class="text-2xl font-bold text-brand-700">Aduan / Aspirasi</h2>
+        <p class="mt-2 text-sm text-gray-600">Kirimkan aduan atau aspirasi Anda. Form ini menyimpan data secara lokal di browser.</p>
+
+        <form id="aduan-form" class="mt-4 grid gap-3 max-w-2xl" novalidate>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="flex flex-col"><span class="text-sm">Nama <span class="text-red-600">*</span></span><input name="nama" required class="mt-1 px-3 py-2 border rounded-md focus:ring-2" /></label>
+            <label class="flex flex-col"><span class="text-sm">NIM <span class="text-red-600">*</span></span><input name="nim" required pattern="\\d+" class="mt-1 px-3 py-2 border rounded-md focus:ring-2" /></label>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="flex flex-col"><span class="text-sm">Prodi</span><input name="prodi" class="mt-1 px-3 py-2 border rounded-md focus:ring-2" /></label>
+            <label class="flex flex-col"><span class="text-sm">Email <span class="text-red-600">*</span></span><input name="email" type="email" required class="mt-1 px-3 py-2 border rounded-md focus:ring-2" /></label>
+          </div>
+
+          <label class="flex flex-col"><span class="text-sm">Metode Pengiriman <span class="text-red-600">*</span></span>
+            <select name="metode" id="metode-pengiriman" required class="mt-1 px-3 py-2 border rounded-md focus:ring-2">
+              <option value="email">Kirim via Email</option>
+              <option value="whatsapp">Hubungi via WhatsApp</option>
+            </select>
+          </label>
+
+          <!-- optional: phone/wa number (if you want to override default) -->
+          <label id="wa-number-row" class="flex flex-col hidden"><span class="text-sm">Nomor WhatsApp (opsional)</span>
+            <input name="wa_number" placeholder="62812xxxx... (gunakan kode negara, tanpa +)" class="mt-1 px-3 py-2 border rounded-md focus:ring-2" />
+          </label>
+
+          <label class="flex flex-col"><span class="text-sm">Pesan <span class="text-red-600">*</span></span><textarea name="pesan" required rows="5" class="mt-1 px-3 py-2 border rounded-md focus:ring-2"></textarea></label>
+
+          <label class="flex flex-col"><span class="text-sm">Upload (opsional, PDF/JPG/PNG max 2MB)</span><input name="file" type="file" accept="application/pdf,image/png,image/jpeg" class="mt-1" /></label>
+
+          <label class="flex items-start gap-2"><input name="agree" type="checkbox" required class="mt-1" /><span class="text-sm">Saya setuju data yang saya kirim digunakan untuk keperluan administrasi IMADIKSI.</span></label>
+
+          <div class="flex gap-3 items-center">
+            <button id="submit-btn" type="submit" class="bg-brand-500 text-white px-4 py-2 rounded-md">Kirim</button>
+            <button id="export-csv" type="button" class="border px-4 py-2 rounded-md">Export CSV</button>
+            <div id="form-status" role="status" aria-live="polite" class="text-sm text-gray-600"></div>
+          </div>
+        </form>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="py-8 sm:py-12" tabindex="-1">
+        <h2 class="text-2xl font-bold text-brand-700">FAQ</h2>
+        <div id="faq-list" class="mt-4 space-y-2"></div>
+      </section>
+
+      <!-- Kader Berprestasi -->
+      <!-- <section id="kader" class="py-8 sm:py-12" tabindex="-1">
+        <h2 class="text-2xl font-bold text-brand-700">Kader Berprestasi</h2>
+        <p class="mt-2 text-sm text-gray-600">Menampilkan kader-kader unggulan dan prestasinya.</p>
+        <div id="kader-grid" class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </section> -->
+
+      <!-- Kontak -->
+      <section id="kontak" class="py-8 sm:py-12" tabindex="-1">
+        <h2 class="text-2xl font-bold text-brand-700">Kontak</h2>
+        <div class="mt-4 grid gap-6 sm:grid-cols-2">
+          <div>
+            <p class="font-semibold">Alamat</p>
+            <p class="text-sm text-gray-600">Jl. Example No.1, Palembang, Sumatera Selatan</p>
+            <p class="mt-3 font-semibold">Email</p>
+            <p class="text-sm text-gray-600">imadiksi@uinrf.ac.id</p>
+            <p class="mt-3 font-semibold">Sosial</p>
+            <p class="text-sm text-gray-600"><a href="https://www.instagram.com/imadiksi_uinrf?igsh=MXRndjlkNHZ6ZTFuZg==" class="text-brand-700">Instagram</a> <a href="https://www.instagram.com/imadiksi_uinrf?igsh=MXRndjlkNHZ6ZTFuZg==" class="text-brand-700">WhatsApp Group</a></p>
+            <p class="mt-3 font-semibold">Jam Layanan</p>
+            <p class="text-sm text-gray-600">Senin–Jumat, 09:00–16:00</p>
+          </div>
+          <div>
+            <p class="font-semibold">Lokasi</p>
+            <div class="mt-2 border rounded-md overflow-hidden p-4 bg-white">
+              <p class="text-sm text-gray-600">Peta lokasi dihapus dari versi ini. Untuk informasi lokasi silakan hubungi admin IMADIKSI atau lihat info kontak resmi universitas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- Deskripsi IMADIKSI -->
+        <!-- <section id="about-imadiksi" class="py-8 sm:py-12" tabindex="-1">
+          <h2 class="text-2xl font-bold text-brand-700">Tentang IMADIKSI</h2>
+          <p class="mt-4 text-gray-700">Ikatan Mahasiswa Bidikmisi (IMADIKSI) UIN Raden Fatah Palembang adalah wadah organisasi mahasiswa penerima KIP Kuliah yang bertujuan mendampingi, membina, dan memperjuangkan hak serta kesejahteraan anggotanya. IMADIKSI menyelenggarakan kegiatan pembinaan akademik, pengembangan soft-skill, advokasi, dan aksi sosial yang mendukung keberlangsungan studi penerima KIP serta meningkatkan keterlibatan mahasiswa dalam kegiatan kampus dan masyarakat.</p>
+        </section> -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 border-t py-6 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-3">
+  <p class="text-sm text-gray-600">© <span id="year"></span> IMADIKSI UIN Raden Fatah Palembang. All rights reserved.</p>
+        <div class="flex gap-3 items-center">
+          <a href="#" id="privacy-link" class="text-sm text-brand-700">Kebijakan Privasi</a>
+          <a href="#" class="text-sm text-brand-700">Instagram</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modals and toasts -->
+    <div id="modal-root"></div>
+    <div id="toast-root" class="fixed bottom-6 right-6 z-50"></div>
+
+    <button id="back-to-top" aria-label="Kembali ke atas" class="fixed bottom-6 left-6 p-3 rounded-full bg-brand-500 text-white shadow-lg hidden">↑</button>
+
+    <script src="data.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

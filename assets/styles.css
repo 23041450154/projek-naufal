@@ -1,0 +1,60 @@
+/* Custom styles for IMADIKSI site */
+:root { --overlay: rgba(12,6,0,0.35); }
+
+/* Hero slideshow container */
+.hero-slideshow { position: relative; overflow: hidden; border-radius: 8px; }
+.hero-slideshow .slides { position: absolute; inset: 0; display: block; }
+.hero-slideshow .slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transform: scale(1.03); transition: opacity 1s ease, transform 8s ease; }
+.hero-slideshow .slide.active { opacity: 1; transform: scale(1); }
+.hero-slideshow .overlay { position: absolute; inset: 0; background: var(--overlay); }
+
+/* ensure hero content sits above slideshow */
+.hero-content { position: relative; z-index: 2; }
+
+/* small accessibility focus helper */
+.user-is-tabbing :focus { outline: 3px solid #f6b834; outline-offset: 2px; }
+
+/* responsive tweaks */
+@media (min-width: 640px) {
+  .hero-slideshow { border-radius: 12px; }
+}
+
+/* Kader carousel styles */
+.kader-carousel { scroll-behavior: smooth; -webkit-overflow-scrolling: touch; }
+.kader-carousel .kader-card { scroll-snap-align: start; flex: 0 0 80%; max-width: 520px; }
+.kader-carousel .kader-card img { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; }
+.no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+@media (min-width: 640px) {
+  .kader-carousel .kader-card { flex: 0 0 48%; }
+}
+
+@media (min-width: 1024px) {
+  .kader-carousel .kader-card { flex: 0 0 30%; }
+}
+
+.menu-link.active {
+  color: #c68600; /* atau gunakan text-brand-500/700 sesuai palette */
+  font-weight: 600;
+}
+
+/* Saat section jadi target anchor atau terfokus, jangan tampilkan outline */
+main section:focus,
+main section:target {
+  outline: none;
+}
+.menu-link:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Simple loader used on "lihat semua" pages */
+.loader {
+  border-top-color: #c68600;
+  animation: spinner 0.3s linear infinite;
+}
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
